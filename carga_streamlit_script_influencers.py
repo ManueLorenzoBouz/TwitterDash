@@ -30,7 +30,7 @@ st.markdown("##")
 #drive.mount('/content/drive')
 #uploaded = files.upload()
 
-ruta_archivo = 'C:\\Users\\Manuel\\Downloads\\streamlit\\User activity.xlsx'
+ruta_archivo = 'User activity.xlsx'
 
 # ruta_archivo = 'https://github.com/ManueLorenzoBouz/TwitterDash/blob/2920d8828a9bcb8e221e856acba27c5b7fb66ff8/User%20activity.xlsx'
 
