@@ -12,7 +12,7 @@ import plotly.express as px  # pip install plotly-express
 import streamlit as st
 import openpyxl
 
-st.set_page_config(page_title="People Analytics Twitter Influencers", page_icon=":loudspeaker:", layout="wide")
+st.set_page_config(page_title="People Analytics Twitter Influencers", page_icon=":chart_with_upwards_trend:", layout="wide")
 
 header = st.container()
 
@@ -22,7 +22,7 @@ graph = st.container()
 
 # ---- MAINPAGE ----
 with header:
-    st.title(":loudspeaker: People Analytics Twitter Influencers")
+    st.title(":chart_with_upwards_trend: People Analytics Twitter Influencers")
     st.markdown("##")
     st.markdown("""---""")
 
@@ -34,10 +34,10 @@ with summary:
 
     left_column, right_column = st.columns(2)
     with left_column:
-        st.subheader("Nº of Users:")
+        st.subheader(":mega: Nº of Users:")
         st.subheader(f"{users}")
         st.markdown("##")
-        st.subheader("Total Nº of Tweets:")
+        st.subheader(":dart: Total Nº of Tweets:")
         st.subheader(f"{ tweets}")
         st.markdown("##")
         st.markdown("""---""")
