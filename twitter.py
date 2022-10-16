@@ -50,11 +50,11 @@ network = px.scatter(
 
 left_column, right_column = st.columns(2)
 with left_column:
-    st.subheader('User Relevance Matrix: Retweets vs Followers')
+    st.subheader('User Relevance Matrix')
     st.plotly_chart(relevance_matrix, use_container_width=True)
 
 with right_column:
-    st.subheader('User Network Analysis: Active mentions vs Passice mentions')
+    st.subheader('User Network Analysis')
     st.plotly_chart(network, use_container_width=True)
 
 hide_st_style = """
