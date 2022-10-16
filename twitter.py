@@ -1,26 +1,15 @@
-# pip install streamlit
-
 import pandas as pd
 import numpy as np
-# import tweepy
-import ast
-import csv
-import time
-import json
-import os
 import plotly.express as px  # pip install plotly-express
-import streamlit as st
+import streamlit as st # pip install streamlit
 import openpyxl
 
 st.set_page_config(page_title="People Analytics Twitter Influencers", page_icon=":chart_with_upwards_trend:", layout="wide")
 
 header = st.container()
-
 summary = st.container()
-
 graph = st.container()
 
-# ---- MAINPAGE ----
 with header:
     st.title(":chart_with_upwards_trend: People Analytics Twitter Influencers")
     st.markdown("##")
@@ -60,7 +49,6 @@ network = px.scatter(
     user_activity, y='Active network', x='Passive network', hover_data=['User name'])
 
 left_column, right_column = st.columns(2)
-
 with left_column:
     st.subheader('User Relevance Matrix: Retweets vs Followers')
     st.plotly_chart(relevance_matrix, use_container_width=True)
@@ -69,7 +57,6 @@ with right_column:
     st.subheader('User Network Analysis: Active mentions vs Passice mentions')
     st.plotly_chart(network, use_container_width=True)
 
-# ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
