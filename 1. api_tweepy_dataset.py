@@ -49,7 +49,7 @@ network_df = pd.DataFrame(aristas)
 users_relevance = tweets_df.groupby(by = 'user_sn', as_index = False).agg({'follower_count': 'max', 'retweet_count': 'sum', 'tweet_text':'count'})
 users_relevance.rename(
     columns = {'user_sn': 'User name', 'follower_count': 'Followers', 'retweet_count': 'Retweets received', 'tweet_text': 'Nº of Tweets'}
-, inplace = True)
+    , inplace = True)
 
 users_active_conection = network_df.groupby(by = 'source', as_index = False).agg({'target': 'count'})
 users_active_conection.rename(
